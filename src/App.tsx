@@ -1,13 +1,19 @@
-import React from "react";
-import logo from "./logo.svg";
 import "./App.css";
-import InputField from "./components/InputField";
-
+import Header from "./components/Header/Header";
+import Home from "./components/Home/Home";
+import { Routes, Route } from "react-router-dom";
 function App() {
   return (
     <div className="App">
-      <InputField />
-      {/* testing. */}
+      <Header />
+
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/shop" element={<Home />} />
+        <Route path="/item-details" element={<Home />} />
+        <Route path="/cart" element={<Home />} />
+        <Route path="/wishlist" element={<Home />} />
+      </Routes>
     </div>
   );
 }

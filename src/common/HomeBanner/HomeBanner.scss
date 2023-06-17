@@ -1,0 +1,17 @@
+.home-banner-container {
+  .home-banner-text {
+    position: relative;
+    .home-banner-heading {
+      position: absolute;
+      top: 50%;
+      left: 40%;
+      color: white;
+      font-size: 1.25rem;
+      z-index: 1;
+    }
+    .home-banner-img {
+      width: 100%;
+      filter: brightness(50%);
+    }
+  }
+}
