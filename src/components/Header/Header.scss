@@ -1,0 +1,14 @@
+@import "../../scss/variables";
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.25rem;
+  background-color: $color-white;
+
+  .header-routes {
+    display: flex;
+    justify-content: center;
+    gap: 1.25rem;
+    cursor: pointer;
+  }
+}

@@ -1,10 +1,17 @@
 import { allImages } from "../../assets/images/allImages";
 import Button from "../Button/Button";
 import "./HomeBanner.scss";
-
+import { useNavigate } from "react-router-dom";
 const HomeBanner = () => {
+  //const navigate is used to navigate from one route to other.
+  const navigate = useNavigate();
+
+  /**
+   * The purpose of this function is to redirect the user to the
+   * shop page when they click a button or link.
+   */
   const handleButtonClick = () => {
-    console.log("button click.");
+    navigate("/shop");
   };
 
   return (
