@@ -1,0 +1,33 @@
+@import "../../scss/variables";
+
+.button-container {
+  background-color: $color-green;
+  color: $color-white;
+  font-weight: bold;
+  font-size: $primary-font-size;
+  padding: 0.625rem 1.25rem;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+
+  &:hover {
+    background-color: $color-dark-grey;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .button-container {
+    background-color: $color-green;
+    color: $color-white;
+    font-weight: bold;
+    font-size: 0.75rem;
+    padding: 0.625rem 1.25rem;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+    &:hover {
+      background-color: $color-dark-grey;
+    }
+  }
+}
